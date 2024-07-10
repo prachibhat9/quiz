@@ -24,19 +24,19 @@
                 <p>What is the largest island in the world?</p>
                 <label>
                 <input type="radio" name="q1" value="Greenland" required>
-                Greenland
+                A) Greenland
                 </label><br>
                 <label>
                 <input type="radio" name="q1" value="New Guinea">
-               New Guinea
+               B) New Guinea
                 </label><br>
                 <label>
                  <input type="radio" name="q1" value="Borneo">
-                 Borneo
+                 C) Borneo
                 </label><br>
                 <label>
                  <input type="radio" name="q1" value="Madagascar">
-                 Madagascar
+                D) Madagascar
                 </label>
             </div>
             <div class="question">
@@ -44,18 +44,18 @@
                 <p>Which planet is known as the "Morning Star" or the "Evening Star"?</p>
                 <label>
                     <input type="radio" name="q2" value="Mars" required>
-                                Mars
+                               A) Mars
                 </label><br>
                 <label>
                     <input type="radio" name="q2" value="Venus">
-                                Venus
+                              B) Venus
                 </label><br>
                 <label>
                      <input type="radio" name="q2" value="Jupiter">
-                                Jupiter
+                               C) Jupiter
                 </label><br>
                 <label><input type="radio" name="q2" value="Saturn">
-                                 Saturn
+                              D) Saturn
                 </label>
             </div>
             <div class="question">
@@ -220,25 +220,48 @@
             </div>
             <button type="button" onclick="calculateScore()">Submit</button>
         </form>
-       
+       </div>
         <div id="result" style="display: none;">
             <div class="scores"><h3>Your Score</h3>
             <p id="score"></p></div>
-           <ol id="answers">
+           <!-- <ol id="answers">
             <h3>Correct Answers:</h3>
-            <li>A) Greenland</li>
-            <li>B) Venus</li>
-            <li>A) William Shakespeare</li>
-            <li>B) 1912</li>
-            <li>A) Au</li>
-            <li>B) Hydrogen</li>
-            <li>D) Ottawa</li>
-            <li>B) Michelangelo</li>
-            <li>B) Albert Einstein</li>
-            <li>C) Diamond</li>
-           </ol>
-        </div>
-    </div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+           </ol> --> </div>
+           <div id="answers"style="display: none;">
+            <h3>Correct Answers</h3>
+            <h4>Q1 What is the largest island in the world?</h4>
+            <p>A) Greenland</p>
+            <h4>Q2 Which planet is known as the "Morning Star" or the "Evening Star"?</h4>
+            <p>B) Venus</p>
+            <h4>Q3 Who wrote the play "Hamlet"?</h4>
+            <p>A) William Shakespeare</p>
+            <h4>Q4 In which year did the Titanic sink?</h4>
+            <p>B) 1912</p>
+            <h4>Q5 What is the chemical symbol for gold?</h4>
+            <p>A) Au</p>
+            <h4>Q6 Which element has the atomic number 1?</h4>
+            <p>B) Hydrogen</p>
+            <h4>Q7 What is the capital city of Canada?</h4>
+            <p>D) Ottawa</p>
+            <h4>Q8 Who painted the ceiling of the Sistine Chapel?</h4>
+            <p>B) Michelangelo</p>
+            <h4>Q9 Which famous scientist developed the theory of general relativity?</h4>
+            <p>B) Albert Einstein</p>
+            <h4>Q10 What is the hardest natural substance on Earth?</h4>
+            <p>C) Diamond</p>
+           </div>
+    
+    
    
      <script>
         function calculateScore() {
