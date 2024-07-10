@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz application</title>
+</head>
+<body>
+    <h1>GENERAL KNOWLEDGE QUIZ</h1>
+    <div class="container">
+        <h2>Please enter your details</h2>
+        <form action="quiz.html" method="get">
+            <label for="name"><span>*</span>Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" >
+    
+            <label for="email"><span>*</span>Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone"><span>*</span>Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" ></textarea>
+  
+            <button id="start">Start the Quiz</button></form>
+            <h3>* indicates the field is required</h3>
+       
+    </div>
+    
+</body>
+</html>
