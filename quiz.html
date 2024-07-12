@@ -218,7 +218,8 @@
             D) Platinum
                 </label>
             </div>
-            <button type="button" onclick="calculateScore()">Submit</button>
+            <!-- <button type="button" onclick="calculateScore()">Submit</button> -->
+            <button type="button"id="submitbutton" onclick="confirmation()">Submit</button>
         </form>
        </div>
         <div id="result" style="display: none;">
@@ -252,6 +253,17 @@
     
    
      <script>
+        function confirmation(){
+            event.preventDefault();
+            const confirmation = confirm("Are you sure you want to submit?");
+            if (confirmation) {
+                document.getElementById("submitbutton").disabled = true;
+
+                calculateScore();
+                } else {
+                return false;
+            }
+        }
         function calculateScore() {
             let score = 0;
             const correctAnswers = ["Greenland", "Venus", "William Shakespeare", "1912", "Au",
